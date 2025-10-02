@@ -7,12 +7,14 @@ const firstIconDisplay = document.getElementById("first-icon");
 const secondIconDisplay = document.getElementById("second-icon");
 const firstSetNameDisplay = document.getElementById("first-set-name");
 const secondSetNameDisplay = document.getElementById("second-set-name");
+const setDetailsDisplay = document.getElementById("set-details");
 let pairValue = 0;
 let score = 0;
+let currentFirstSet = null;
+let currentSecondSet = null;
 
 olderBtn.addEventListener("click", () => {
   console.log("older!");
-
   compareResult(1);
 });
 newerBtn.addEventListener("click", () => {
@@ -30,9 +32,12 @@ resetBtn.addEventListener("click", () => {
 
 async function getIcons() {
   const icon = await fetchIcons();
-  renderFirstIcon(icon[0]);
-  renderSecondIcon(icon[1]);
-  console.log(pairValue);
+  currentFirstSet = icon[0];
+  currentSecondSet = icon[1];
+
+  renderFirstIcon(currentFirstSet);
+  renderSecondIcon(currentSecondSet);
+
   newerBtn.classList.add("show");
   newerBtn.classList.remove("hidden");
   olderBtn.classList.add("show");
@@ -97,6 +102,7 @@ function compareResult(userValue) {
     newerBtn.classList.remove("show");
     olderBtn.classList.add("hidden");
     olderBtn.classList.remove("show");
+    showSetDetails();
   } else {
     console.log("you lost!");
     resetBtn.classList.add("show");
@@ -105,7 +111,20 @@ function compareResult(userValue) {
     newerBtn.classList.remove("show");
     olderBtn.classList.add("hidden");
     olderBtn.classList.remove("show");
+    setDetailsDisplay.innerHTML = "";
   }
+}
+
+function showSetDetails() {
+  const firstSetDate = currentFirstSet.date;
+  const secondSetDate = currentSecondSet.date;
+  const firstSetName = currentFirstSet.name;
+  const secondSetName = currentSecondSet.name;
+
+  setDetailsDisplay.innerHTML = `
+    <p>${firstSetName} was published: ${firstSetDate}</p>
+    <p>${secondSetName} was published: ${secondSetDate}</p>
+  `;
 }
 
 window.addEventListener("load", getIcons);
