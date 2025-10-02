@@ -5,22 +5,32 @@ const resetBtn = document.getElementById("reset");
 const scoreDisplay = document.getElementById("score");
 const firstIconDisplay = document.getElementById("first-icon");
 const secondIconDisplay = document.getElementById("second-icon");
+let pairValue = 0;
 let score = 0;
 
-olderBtn.addEventListener("click", (event) => {
+olderBtn.addEventListener("click", () => {
   console.log("older!");
+
+  compareResult(1);
 });
-newerBtn.addEventListener("click", (event) => {
+newerBtn.addEventListener("click", () => {
   console.log("newer!");
+  compareResult(2);
 });
-nextBtn.addEventListener("click", (event) => {
+nextBtn.addEventListener("click", () => {
   getIcons();
+});
+resetBtn.addEventListener("click", () => {
+  getIcons();
+  score = 0;
+  scoreDisplay.textContent = 0;
 });
 
 async function getIcons() {
   const icon = await fetchIcons();
   renderFirstIcon(icon[0]);
   renderSecondIcon(icon[1]);
+  console.log(pairValue);
 }
 
 async function fetchIcons() {
@@ -37,6 +47,11 @@ async function fetchIcons() {
     }
     console.log(firstIndex, secondIndex);
     console.log(data[firstIndex], data[secondIndex]);
+    if (new Date(data[firstIndex].date) > new Date(data[secondIndex].date)) {
+      pairValue = 2;
+    } else {
+      pairValue = 1;
+    }
     return [data[firstIndex], data[secondIndex]];
   } catch (error) {
     console.log(error);
@@ -50,7 +65,7 @@ function renderFirstIcon(icon) {
   firstIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
 <p>${name}</p>
-<h2>than this?</h2>`;
+`;
 }
 function renderSecondIcon(icon) {
   const { image, name, date } = icon;
@@ -59,7 +74,16 @@ function renderSecondIcon(icon) {
   secondIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
 <p>${name}</p>
-<h2>than this?</h2>`;
+`;
+}
+
+function compareResult(userValue) {
+  if (userValue === pairValue) {
+    score++;
+    scoreDisplay.textContent = score;
+  } else {
+    console.log("you lost!");
+  }
 }
 
 window.addEventListener("load", getIcons);
