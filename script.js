@@ -26,6 +26,7 @@ resetBtn.addEventListener("click", () => {
   getIcons();
   score = 0;
   scoreDisplay.textContent = 0;
+  scoreDisplay.classList.remove("game-over");
 });
 
 async function getIcons() {
@@ -108,6 +109,7 @@ function compareResult(userValue) {
     olderBtn.classList.add("hidden");
     olderBtn.classList.remove("show");
     setDetailsDisplay.innerHTML = "";
+    scoreDisplay.classList.add("game-over");
   }
 }
 

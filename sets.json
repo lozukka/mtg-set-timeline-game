@@ -113,5 +113,20 @@
     "image": "./icons/magic-card-symbol-oath-of-the-gatewatch-150x129.png",
     "name": "Oath of the Gatewatch",
     "date": "2016-01-22"
+  },
+  {
+    "image": "./icons/magic-card-symbol-shadows-over-innistrad-150x124.png",
+    "name": "Shadows over Innistrad",
+    "date": "2016-04-08"
+  },
+  {
+    "image": "./icons/magic-card-symbol-eternal-masters-129x150.png",
+    "name": "Eternal Masters",
+    "date": "2016-06-10"
+  },
+  {
+    "image": "./icons/magic-card-symbol-eldritch-moon-150x97.png",
+    "name": "Eldritch Moon",
+    "date": "2016-07-22"
   }
 ]
