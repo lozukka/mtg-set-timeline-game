@@ -1,16 +1,16 @@
 [
   {
-    "icon": "./icons/Theros-Beyond-Death-MTG-set-symbol-146x150.png",
+    "image": "./icons/Theros-Beyond-Death-MTG-set-symbol-146x150.png",
     "name": "Theros: Beyond Death",
     "date": "2020-01-24"
   },
   {
-    "icon": "./icons/Throne-of-Eldraine-MTG-set-symbol-126x150.png",
+    "image": "./icons/Throne-of-Eldraine-MTG-set-symbol-126x150.png",
     "name": "Throne of Eldraine",
     "date": "2019-04-10"
   },
   {
-    "icon": "./icons/Commander-2019-MTG-set-symbol-134x150.png",
+    "image": "./icons/Commander-2019-MTG-set-symbol-134x150.png",
     "name": "Commander 2019",
     "date": "2019-08-23"
   }
