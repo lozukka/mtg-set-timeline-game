@@ -31,7 +31,7 @@ async function fetchIcons() {
     if (!response.ok) throw new Error("Failed to load icons");
 
     const data = await response.json();
-    const firstIndex = Math.floor(Math.random() * 3);
+    const firstIndex = Math.floor(Math.random() * data.length);
     const secondIndex = Math.floor(Math.random() * 3);
     console.log(firstIndex, secondIndex);
     console.log(data[firstIndex], data[secondIndex]);
@@ -45,6 +45,7 @@ function renderIcons(image, name, date) {
   console.log(image, name, date);
   secondIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
+<p>${name}</p>
 <h2>than this?</h2>`;
 }
 
