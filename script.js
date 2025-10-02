@@ -5,6 +5,8 @@ const resetBtn = document.getElementById("reset");
 const scoreDisplay = document.getElementById("score");
 const firstIconDisplay = document.getElementById("first-icon");
 const secondIconDisplay = document.getElementById("second-icon");
+const firstSetNameDisplay = document.getElementById("first-set-name");
+const secondSetNameDisplay = document.getElementById("second-set-name");
 let pairValue = 0;
 let score = 0;
 
@@ -64,8 +66,8 @@ function renderFirstIcon(icon) {
   console.log(image, name, date);
   firstIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
-<p>${name}</p>
 `;
+  firstSetNameDisplay.textContent = name;
 }
 function renderSecondIcon(icon) {
   const { image, name, date } = icon;
@@ -73,8 +75,8 @@ function renderSecondIcon(icon) {
   console.log(image, name, date);
   secondIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
-<p>${name}</p>
 `;
+  secondSetNameDisplay.textContent = name;
 }
 
 function compareResult(userValue) {
