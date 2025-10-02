@@ -4,7 +4,7 @@ json-file structure:
 
 ```
 {
-    "image": "",
+    "image": "./",
     "name": "",
     "date": "2020-01-24"
   }

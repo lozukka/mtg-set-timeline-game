@@ -53,5 +53,65 @@
     "image": "./icons/magic-card-symbol-journey-into-nyx-150x141.png",
     "name": "Journey into Nyx",
     "date": "2014-05-02"
+  },
+  {
+    "image": "./icons/magic-card-symbol-conspiracy-106x150.png",
+    "name": "Conspiracy",
+    "date": "2014-06-06"
+  },
+  {
+    "image": "./icons/magic-card-symbol-magic-2015-150x80.png",
+    "name": "Magic 2015",
+    "date": "2014-07-18"
+  },
+  {
+    "image": "./icons/magic-card-symbol-khans-of-tarkir-139x150.png",
+    "name": "Khans of Tarkir",
+    "date": "2014-09-26"
+  },
+  {
+    "image": "icons/magic-card-symbol-commander-2014-150x100.png",
+    "name": "Commander 2014",
+    "date": "2014-07-11"
+  },
+  {
+    "image": "./icons/magic-card-symbol-fate-reforged-150x130.png",
+    "name": "Fate Reforged",
+    "date": "2015-01-23"
+  },
+  {
+    "image": "./icons/magic-card-symbol-dragons-of-tarkir-132x150.png",
+    "name": "Dragons of Tarkir",
+    "date": "2015-03-27"
+  },
+  {
+    "image": "./icons/magic-card-symbol-modern-masters-2015-150x119.png",
+    "name": "Modern Masters 2015",
+    "date": "2015-05-22"
+  },
+  {
+    "image": "./icons/magic-card-symbol-magic-origins-150x116.png",
+    "name": "Magic Origins",
+    "date": "2015-07-17"
+  },
+  {
+    "image": "./icons/magic-card-symbol-battle-for-zendikar-104x150.png",
+    "name": "Battle for Zendikar",
+    "date": "2015-02-10"
+  },
+  {
+    "image": "./icons/magic-card-symbol-zendikar-expeditions-93x150.png",
+    "name": "Zendikar Expeditions",
+    "date": "2016-02-10"
+  },
+  {
+    "image": "./icons/magic-card-symbol-commander-2015-150x110.png",
+    "name": "Commander 2015",
+    "date": "2015-11-13"
+  },
+  {
+    "image": "./icons/magic-card-symbol-oath-of-the-gatewatch-150x129.png",
+    "name": "Oath of the Gatewatch",
+    "date": "2016-01-22"
   }
 ]
