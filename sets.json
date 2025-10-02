@@ -1,17 +1,57 @@
 [
   {
-    "image": "./icons/Theros-Beyond-Death-MTG-set-symbol-146x150.png",
-    "name": "Theros: Beyond Death",
-    "date": "2020-01-24"
+    "image": "./icons/magic-card-symbol-innistrad-150x136.png",
+    "name": "Innistrad",
+    "date": "2011-09-30"
   },
   {
-    "image": "./icons/Throne-of-Eldraine-MTG-set-symbol-126x150.png",
-    "name": "Throne of Eldraine",
-    "date": "2019-04-10"
+    "image": "./icons/magic-card-symbol-dark-ascension-150x109.png",
+    "name": "Dark Ascension",
+    "date": "2012-02-03"
   },
   {
-    "image": "./icons/Commander-2019-MTG-set-symbol-134x150.png",
-    "name": "Commander 2019",
-    "date": "2019-08-23"
+    "image": "./icons/magic-card-symbol-avacyn-restored-150x150.png",
+    "name": "Avacyn Restored",
+    "date": "2012-05-04"
+  },
+  {
+    "image": "./icons/magic-card-symbol-magic-2013-150x80.png",
+    "name": "Magic 2013",
+    "date": "2012-07-13"
+  },
+  {
+    "image": "./icons/magic-card-symbol-return-to-ravnica-150x150.png",
+    "name": "Return to Ravnica",
+    "date": "2012-10-05"
+  },
+  {
+    "image": "./icons/magic-card-symbol-gatecrash-150x95.png",
+    "name": "Gatecrash",
+    "date": "2013-02-01"
+  },
+  {
+    "image": "./icons/magic-card-symbol-dragons-maze-150x106.png",
+    "name": "Dragon's Maze",
+    "date": "2013-05-03"
+  },
+  {
+    "image": "./icons/magic-card-symbol-magic-2014-150x80.png",
+    "name": "Magic 2014",
+    "date": "2013-07-19"
+  },
+  {
+    "image": "./icons/magic-card-symbol-theros-150x150.png",
+    "name": "Theros",
+    "date": "2013-09-27"
+  },
+  {
+    "image": "./icons/magic-card-symbol-born-of-the-gods-150x145.png",
+    "name": "Born of the Gods",
+    "date": "2014-02-07"
+  },
+  {
+    "image": "./icons/magic-card-symbol-journey-into-nyx-150x141.png",
+    "name": "Journey into Nyx",
+    "date": "2014-05-02"
   }
 ]
