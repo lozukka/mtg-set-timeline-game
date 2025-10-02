@@ -105,7 +105,6 @@ function compareResult(userValue) {
     newerBtn.classList.remove("show");
     olderBtn.classList.add("hidden");
     olderBtn.classList.remove("show");
-    getIcons();
   }
 }
 
