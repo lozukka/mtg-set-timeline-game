@@ -33,6 +33,14 @@ async function getIcons() {
   renderFirstIcon(icon[0]);
   renderSecondIcon(icon[1]);
   console.log(pairValue);
+  newerBtn.classList.add("show");
+  newerBtn.classList.remove("hidden");
+  olderBtn.classList.add("show");
+  olderBtn.classList.remove("hidden");
+  nextBtn.classList.add("hidden");
+  nextBtn.classList.remove("show");
+  resetBtn.classList.add("hidden");
+  resetBtn.classList.remove("show");
 }
 
 async function fetchIcons() {
@@ -83,8 +91,21 @@ function compareResult(userValue) {
   if (userValue === pairValue) {
     score++;
     scoreDisplay.textContent = score;
+    nextBtn.classList.add("show");
+    nextBtn.classList.remove("hidden");
+    newerBtn.classList.add("hidden");
+    newerBtn.classList.remove("show");
+    olderBtn.classList.add("hidden");
+    olderBtn.classList.remove("show");
   } else {
     console.log("you lost!");
+    resetBtn.classList.add("show");
+    resetBtn.classList.remove("hidden");
+    newerBtn.classList.add("hidden");
+    newerBtn.classList.remove("show");
+    olderBtn.classList.add("hidden");
+    olderBtn.classList.remove("show");
+    getIcons();
   }
 }
 
