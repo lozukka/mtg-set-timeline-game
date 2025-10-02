@@ -14,11 +14,9 @@ let currentFirstSet = null;
 let currentSecondSet = null;
 
 olderBtn.addEventListener("click", () => {
-  console.log("older!");
   compareResult(1);
 });
 newerBtn.addEventListener("click", () => {
-  console.log("newer!");
   compareResult(2);
 });
 nextBtn.addEventListener("click", () => {
@@ -60,8 +58,7 @@ async function fetchIcons() {
     while (secondIndex === firstIndex) {
       secondIndex = Math.floor(Math.random() * data.length);
     }
-    console.log(firstIndex, secondIndex);
-    console.log(data[firstIndex], data[secondIndex]);
+
     if (new Date(data[firstIndex].date) > new Date(data[secondIndex].date)) {
       pairValue = 2;
     } else {
@@ -69,14 +66,14 @@ async function fetchIcons() {
     }
     return [data[firstIndex], data[secondIndex]];
   } catch (error) {
+    setDetailsDisplay.textContent = error;
     console.log(error);
   }
 }
 
 function renderFirstIcon(icon) {
   const { image, name, date } = icon;
-  console.log(icon);
-  console.log(image, name, date);
+
   firstIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
 `;
@@ -84,8 +81,7 @@ function renderFirstIcon(icon) {
 }
 function renderSecondIcon(icon) {
   const { image, name, date } = icon;
-  console.log(icon);
-  console.log(image, name, date);
+
   secondIconDisplay.innerHTML = `<span id=icon2>
 <img src="${image}"/></span>
 `;
