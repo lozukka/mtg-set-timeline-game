@@ -8,6 +8,7 @@ const secondIconDisplay = document.getElementById("second-icon");
 const firstSetNameDisplay = document.getElementById("first-set-name");
 const secondSetNameDisplay = document.getElementById("second-set-name");
 const setDetailsDisplay = document.getElementById("set-details");
+const scoreTitle = document.querySelector("h3");
 let pairValue = 0;
 let score = 0;
 let currentFirstSet = null;
@@ -28,6 +29,7 @@ resetBtn.addEventListener("click", () => {
   scoreDisplay.textContent = 0;
   scoreDisplay.classList.remove("game-over");
   setDetailsDisplay.innerHTML = "";
+  scoreTitle.classList.remove("game-over");
 });
 
 async function getIcons() {
@@ -111,6 +113,7 @@ function compareResult(userValue) {
     olderBtn.classList.remove("show");
     setDetailsDisplay.innerHTML = "";
     scoreDisplay.classList.add("game-over");
+    scoreTitle.classList.add("game-over");
     showSetDetails();
   }
 }
