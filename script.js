@@ -40,14 +40,10 @@ async function getIcons() {
   renderFirstIcon(currentFirstSet);
   renderSecondIcon(currentSecondSet);
 
-  newerBtn.classList.add("show");
-  newerBtn.classList.remove("hidden");
-  olderBtn.classList.add("show");
-  olderBtn.classList.remove("hidden");
-  nextBtn.classList.add("hidden");
-  nextBtn.classList.remove("show");
-  resetBtn.classList.add("hidden");
-  resetBtn.classList.remove("show");
+  setClasses(newerBtn, { show: true, hidden: false });
+  setClasses(olderBtn, { show: true, hidden: false });
+  setClasses(nextBtn, { show: false, hidden: true });
+  setClasses(resetBtn, { show: false, hidden: true });
 }
 
 async function fetchIcons() {
@@ -74,6 +70,10 @@ async function fetchIcons() {
     console.log(error);
   }
 }
+function setClasses(el, { show = false, hidden = false } = {}) {
+  el.classList.toggle("show", show);
+  el.classList.toggle("hidden", hidden);
+}
 
 function renderFirstIcon(icon) {
   const { image, name, date } = icon;
@@ -96,21 +96,15 @@ function compareResult(userValue) {
   if (userValue === pairValue) {
     score++;
     scoreDisplay.textContent = score;
-    nextBtn.classList.add("show");
-    nextBtn.classList.remove("hidden");
-    newerBtn.classList.add("hidden");
-    newerBtn.classList.remove("show");
-    olderBtn.classList.add("hidden");
-    olderBtn.classList.remove("show");
+    setClasses(newerBtn, { show: false, hidden: true });
+    setClasses(nextBtn, { show: true, hidden: false });
+    setClasses(olderBtn, { show: false, hidden: true });
     showSetDetails();
   } else {
-    console.log("you lost!");
-    resetBtn.classList.add("show");
-    resetBtn.classList.remove("hidden");
-    newerBtn.classList.add("hidden");
-    newerBtn.classList.remove("show");
-    olderBtn.classList.add("hidden");
-    olderBtn.classList.remove("show");
+    setClasses(newerBtn, { show: false, hidden: true });
+    setClasses(resetBtn, { show: true, hidden: false });
+    setClasses(olderBtn, { show: false, hidden: true });
+
     setDetailsDisplay.innerHTML = "";
     scoreDisplay.classList.add("game-over");
     scoreTitle.classList.add("game-over");
