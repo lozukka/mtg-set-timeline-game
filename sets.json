@@ -270,9 +270,14 @@
     "date": "2020-04-24"
   },
   {
-    "image": "./icons/m21_Common.pngg",
+    "image": "./icons/m21_Common.png",
     "name": "Core Set 2021",
     "date": "2020-07-03"
+  },
+  {
+    "image": "./icons/jumpstart.png",
+    "name": "Jumpstart",
+    "date": "2020-07-17"
   },
   {
     "image": "./icons/Zendikar-Rising-MTG-set-symbol-143x150.png",
@@ -330,6 +335,11 @@
     "date": "2022-11-18"
   },
   {
+    "image": "./icons/jumpstart22.png",
+    "name": "Jumpstart 2022",
+    "date": "2022-12-02"
+  },
+  {
     "image": "./icons/all-will-be-one.webp",
     "name": "Phyrexia: All Will Be One",
     "date": "2023-02-03"
@@ -378,6 +388,11 @@
     "image": "./icons/duskmourn.png",
     "name": "Duskmourn: House of Horror",
     "date": "2024-09-27"
+  },
+  {
+    "image": "./icons/fundations-jumpstart.png",
+    "name": "Foundations Jumpstart",
+    "date": "2024-11-15"
   },
   {
     "image": "./icons/Aetherdrift.png",
