@@ -9,6 +9,7 @@ const firstSetNameDisplay = document.getElementById("first-set-name");
 const secondSetNameDisplay = document.getElementById("second-set-name");
 const setDetailsDisplay = document.getElementById("set-details");
 const scoreTitle = document.querySelector("h3");
+const gameTitle = document.querySelector("h2");
 let pairValue = 0;
 let score = 0;
 let currentFirstSet = null;
@@ -83,7 +84,6 @@ function compareResult(userValue) {
     showSetDetails();
   } else {
     setGameState("gameover");
-
     setDetailsDisplay.innerHTML = "";
     scoreDisplay.classList.add("game-over");
     scoreTitle.classList.add("game-over");
@@ -110,6 +110,9 @@ function setGameState(state) {
       show(olderBtn);
       hide(nextBtn);
       hide(resetBtn);
+      show(gameTitle);
+      show(firstIconDisplay);
+      show(secondIconDisplay);
       break;
     case "correct":
       hide(newerBtn);
@@ -122,6 +125,9 @@ function setGameState(state) {
       hide(olderBtn);
       hide(nextBtn);
       show(resetBtn);
+      hide(gameTitle);
+      hide(firstIconDisplay);
+      hide(secondIconDisplay);
       break;
   }
 }
