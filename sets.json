@@ -128,5 +128,80 @@
     "image": "./icons/magic-card-symbol-eldritch-moon-150x97.png",
     "name": "Eldritch Moon",
     "date": "2016-07-22"
+  },
+  {
+    "image": "./icons/magic-card-symbol-conspiracy-take-the-crown-134x150.png",
+    "name": "Conspiracy: Take the Crown",
+    "date": "2016-08-26"
+  },
+  {
+    "image": "./icons/magic-card-symbol-kaladesh-150x131.png",
+    "name": "Kaladesh",
+    "date": "2016-09-30"
+  },
+  {
+    "image": "./icons/magic-card-symbol-treasure-chests-150x105.png",
+    "name": "Treasure Chests",
+    "date": "2016-10-05"
+  },
+  {
+    "image": "./icons/magic-card-symbol-commander-2016-121x150.png",
+    "name": "Commander 2016",
+    "date": "2016-11-11"
+  },
+  {
+    "image": "./icons/magic-card-symbol-aether-revolt-150x120.png",
+    "name": "Aether Revolt",
+    "date": "2017-01-20"
+  },
+  {
+    "image": "./icons/Modern_Masters_2017_Edition-150x150.png",
+    "name": "Modern Masters 2017 Edition",
+    "date": "2017-03-17"
+  },
+  {
+    "image": "./icons/magic-card-symbol-amonkhet-150x150.png",
+    "name": "Amonkhet",
+    "date": "2017-04-28"
+  },
+  {
+    "image": "./icons/magic-card-symbol-hour-of-devastation-134x150.png",
+    "name": "Hour of Devastation",
+    "date": "2017-07-14"
+  },
+  {
+    "image": "./icons/magic-card-symbol-commander-2017-129x150.png",
+    "name": "Commander 2017",
+    "date": "2017-08-25"
+  },
+  {
+    "image": "./icons/magic-card-symbol-ixalan-150x150.png",
+    "name": "Ixalan",
+    "date": "2017-09-29"
+  },
+  {
+    "image": "./icons/magic-card-symbol-iconic-masters-150x150.png",
+    "name": "Iconic Masters",
+    "date": "2017-11-17"
+  },
+  {
+    "image": "./icons/magic-card-symbol-explorers-of-ixalan-150x150.png",
+    "name": "Explorers of Ixalan",
+    "date": "2017-11-24"
+  },
+  {
+    "image": "./icons/magic-card-symbol-unstable-150x101.png",
+    "name": "Unstable",
+    "date": "2017-12-08"
+  },
+  {
+    "image": "./icons/magic-card-symbol-rivals-of-ixalan-150x135.png",
+    "name": "Rivals of Ixalan",
+    "date": "2018-01-19"
+  },
+  {
+    "image": "./icons/magic-card-symbol-masters-25-109x150.png",
+    "name": "Masters 25",
+    "date": "2018-03-16"
   }
 ]
