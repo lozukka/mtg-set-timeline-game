@@ -278,5 +278,145 @@
     "image": "./icons/Core-Set-2021-MTG-set-symbol-150x150.png",
     "name": "Core Set 2021",
     "date": "2020-07-03"
+  },
+  {
+    "image": "./icons/Zendikar-Rising-MTG-set-symbol-143x150.png",
+    "name": "Zendikar Rising",
+    "date": "2020-09-25"
+  },
+  {
+    "image": "./icons/Kaldheim_600x.webp",
+    "name": "Kaldheim",
+    "date": "2021-02-05"
+  },
+  {
+    "image": "./icons/Strixhaven_600x.webp",
+    "name": "Strixhaven: School of Mages",
+    "date": "2021-04-23"
+  },
+  {
+    "image": "./icons/mh2.png",
+    "name": "Modern Horizons 2",
+    "date": "2021-06-18"
+  },
+  {
+    "image": "./icons/Adventures-in-the-Forgotten-Realms-set-symbol-259x300_large_01886376-257a-4825-a5f5-a32f3a5a3186_600x.webp",
+    "name": "Dungeons & Dragons: Adventures in the Forgotten Realms",
+    "date": "2021-07-23"
+  },
+  {
+    "image": "./icons/GR_pFjoa0AAwYUa.jpg",
+    "name": "Innistrad: Midnight Hunt",
+    "date": "2021-09-24"
+  },
+  {
+    "image": "./icons/crimson-vow.png",
+    "name": "Innistrad: Crimson Vow",
+    "date": "2021-11-19"
+  },
+  {
+    "image": "./icons/neon-dynasty.png",
+    "name": "Kamigawa: Neon Dynasty",
+    "date": "2022-02-18"
+  },
+  {
+    "image": "./icons/new-capenna.png",
+    "name": "Streets of New Capenna",
+    "date": "2022-04-29"
+  },
+  {
+    "image": "./icons/dominaria.png",
+    "name": "Dominaria United",
+    "date": "2022-09-09"
+  },
+  {
+    "image": "./icons/Magic_The_Gathering_-_The_Brothers'_War_-_Set_Symbol.png",
+    "name": "The Brothers' War",
+    "date": "2022-11-18"
+  },
+  {
+    "image": "./icons/all-will-be-one.webp",
+    "name": "Phyrexia: All Will Be One",
+    "date": "2023-02-03"
+  },
+  {
+    "image": "./icons/march-of-machine.webp",
+    "name": "March of the Machine",
+    "date": "2023-04-21"
+  },
+  {
+    "image": "./icons/lord-of-the-rings.png",
+    "name": "The Lord of the Rings: Tales of Middle-earth",
+    "date": "2020-01-24"
+  },
+  {
+    "image": "./icons/wilds-of-eldraine.png",
+    "name": "Wilds of Eldraine",
+    "date": "2023-09-08"
+  },
+  {
+    "image": "./icons/lost-ixalan.png",
+    "name": "The Lost Caverns of Ixalan",
+    "date": "2023-11-17"
+  },
+  {
+    "image": "./icons/murders-at-karlov.png",
+    "name": "Murders at Karlov Manor",
+    "date": "2024-02-09"
+  },
+  {
+    "image": "./icons/outlaws.png",
+    "name": "Outlaws of Thunder Junction",
+    "date": "2024-04-19"
+  },
+  {
+    "image": "./icons/mh3.png",
+    "name": "Modern Horizons 3",
+    "date": "2024-06-14"
+  },
+  {
+    "image": "./icons/Bloomburrow.png",
+    "name": "Bloomburrow",
+    "date": "2024-08-02"
+  },
+  {
+    "image": "./icons/duskmourn.png",
+    "name": "Duskmourn: House of Horror",
+    "date": "2024-09-27"
+  },
+  {
+    "image": "./icons/Aetherdrift.png",
+    "name": "Aetherdrift",
+    "date": "2025-02-14"
+  },
+  {
+    "image": "./icons/Tarkir-Dragonstorm.png",
+    "name": "Tarkir: Dragonstorm",
+    "date": "2025-04-11"
+  },
+  {
+    "image": "./icons/Final-Fantasy.png",
+    "name": "Final Fantasy",
+    "date": "2025-06-13"
+  },
+  {
+    "image": "./icons/Edge-Eternities.png",
+    "name": "Edge of Eternities",
+    "date": "2025-08-01"
+  },
+  {
+    "image": "./icons/spiderman.png",
+    "name": "Marvel's Spider-Man",
+    "date": "2025-09-26"
+  },
+  {
+    "image": "./icons/avatar.png",
+    "name": "Avatar: The Last Airbender",
+    "date": "2025-11-21"
+  },
+  {
+    "image": "./icons/lorwyn.png",
+    "name": "Lorwyn Eclipsed",
+    "date": "2026-01-23"
   }
 ]
