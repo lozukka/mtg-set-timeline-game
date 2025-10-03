@@ -37,13 +37,10 @@ async function getIcons() {
   currentFirstSet = icon[0];
   currentSecondSet = icon[1];
 
-  renderFirstIcon(currentFirstSet);
-  renderSecondIcon(currentSecondSet);
+  renderIcon(currentFirstSet, firstIconDisplay, firstSetNameDisplay);
+  renderIcon(currentSecondSet, secondIconDisplay, secondSetNameDisplay);
 
-  setClasses(newerBtn, { show: true, hidden: false });
-  setClasses(olderBtn, { show: true, hidden: false });
-  setClasses(nextBtn, { show: false, hidden: true });
-  setClasses(resetBtn, { show: false, hidden: true });
+  setGameState("playing");
 }
 
 async function fetchIcons() {
@@ -67,43 +64,25 @@ async function fetchIcons() {
     return [data[firstIndex], data[secondIndex]];
   } catch (error) {
     setDetailsDisplay.textContent = error;
-    console.log(error);
+    console.error(error);
   }
 }
-function setClasses(el, { show = false, hidden = false } = {}) {
-  el.classList.toggle("show", show);
-  el.classList.toggle("hidden", hidden);
-}
 
-function renderFirstIcon(icon) {
+function renderIcon(icon, displayElement, setNameDisplay) {
   const { image, name, date } = icon;
 
-  firstIconDisplay.innerHTML = `<span id=icon2>
-<img src="${image}"/></span>
-`;
-  firstSetNameDisplay.textContent = name;
-}
-function renderSecondIcon(icon) {
-  const { image, name, date } = icon;
-
-  secondIconDisplay.innerHTML = `<span id=icon2>
-<img src="${image}"/></span>
-`;
-  secondSetNameDisplay.textContent = name;
+  displayElement.innerHTML = `<span><img src="${image}"/></span>`;
+  setNameDisplay.textContent = name;
 }
 
 function compareResult(userValue) {
   if (userValue === pairValue) {
     score++;
     scoreDisplay.textContent = score;
-    setClasses(newerBtn, { show: false, hidden: true });
-    setClasses(nextBtn, { show: true, hidden: false });
-    setClasses(olderBtn, { show: false, hidden: true });
+    setGameState("correct");
     showSetDetails();
   } else {
-    setClasses(newerBtn, { show: false, hidden: true });
-    setClasses(resetBtn, { show: true, hidden: false });
-    setClasses(olderBtn, { show: false, hidden: true });
+    setGameState("gameover");
 
     setDetailsDisplay.innerHTML = "";
     scoreDisplay.classList.add("game-over");
@@ -122,6 +101,42 @@ function showSetDetails() {
     <p>${firstSetName} was published: ${firstSetDate}</p>
     <p>${secondSetName} was published: ${secondSetDate}</p>
   `;
+}
+
+function setGameState(state) {
+  switch (state) {
+    case "playing":
+      show(newerBtn);
+      show(olderBtn);
+      hide(nextBtn);
+      hide(resetBtn);
+      break;
+    case "correct":
+      hide(newerBtn);
+      hide(olderBtn);
+      show(nextBtn);
+      hide(resetBtn);
+      break;
+    case "gameover":
+      hide(newerBtn);
+      hide(olderBtn);
+      hide(nextBtn);
+      show(resetBtn);
+      break;
+  }
+}
+
+function show(element) {
+  setClasses(element, { show: true, hidden: false });
+}
+
+function hide(element) {
+  setClasses(element, { show: false, hidden: true });
+}
+
+function setClasses(el, { show = false, hidden = false } = {}) {
+  el.classList.toggle("show", show);
+  el.classList.toggle("hidden", hidden);
 }
 
 window.addEventListener("load", getIcons);
