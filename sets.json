@@ -203,5 +203,80 @@
     "image": "./icons/magic-card-symbol-masters-25-109x150.png",
     "name": "Masters 25",
     "date": "2018-03-16"
+  },
+  {
+    "image": "./icons/magic-card-symbol-dominaria-115x150.png",
+    "name": "Dominaria",
+    "date": "2018-04-27"
+  },
+  {
+    "image": "./icons/magic-card-symbol-battlebond-150x150.png",
+    "name": "Battlebond",
+    "date": "2018-06-08"
+  },
+  {
+    "image": "./icons/magic-card-symbol-core-set-2019-150x72.png",
+    "name": "Core set 2019",
+    "date": "2018-07-13"
+  },
+  {
+    "image": "./icons/magic-card-symbol-guilds-of-ravnica-150x90.png",
+    "name": "Guilds of Ravnica",
+    "date": "2018-10-05"
+  },
+  {
+    "image": "./icons/magic-card-symbol-ultimate-masters-150x70.png",
+    "name": "Ultimate Masters",
+    "date": "2018-12-07"
+  },
+  {
+    "image": "./icons/magic-card-symbol-ravnica-allegiance-150x87.png",
+    "name": "Ravnica Allegiance",
+    "date": "2019-01-25"
+  },
+  {
+    "image": "./icons/magic-card-symbol-war-of-the-spark-147x150.png",
+    "name": "War of the Spark",
+    "date": "2019-05-03"
+  },
+  {
+    "image": "./icons/magic-card-symbol-modern-horizons-150x91.png",
+    "name": "Modern Horizons",
+    "date": "2019-06-14"
+  },
+  {
+    "image": "./icons/magic-card-symbol-core-set-2019-150x72.png",
+    "name": "Core Set 2020",
+    "date": "2019-07-12"
+  },
+  {
+    "image": "./icons/Commander-2019-MTG-set-symbol-134x150.png",
+    "name": "Commander 2019",
+    "date": "2019-08-23"
+  },
+  {
+    "image": "./icons/Throne-of-Eldraine-MTG-set-symbol-126x150.png",
+    "name": "Throne of Eldraine",
+    "date": "2019-10-04"
+  },
+  {
+    "image": "./icons/Theros-Beyond-Death-MTG-set-symbol-146x150.png",
+    "name": "Theros: Beyond Death",
+    "date": "2020-01-24"
+  },
+  {
+    "image": "./icons/Unsanctioned-MTG-set-symbol-150x146.png",
+    "name": "Unsanctioned",
+    "date": "2020-02-29"
+  },
+  {
+    "image": "./icons/Commander-2020-MTG-set-symbol-150x148.png",
+    "name": "Commander 2020",
+    "date": "2020-04-24"
+  },
+  {
+    "image": "./icons/Core-Set-2021-MTG-set-symbol-150x150.png",
+    "name": "Core Set 2021",
+    "date": "2020-07-03"
   }
 ]
